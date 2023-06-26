@@ -82,7 +82,7 @@ export const TransactionsProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
 
-      throw new Error ("New thereum object");
+      throw new Error ("New Ethereum Object");
     }
   };
 
