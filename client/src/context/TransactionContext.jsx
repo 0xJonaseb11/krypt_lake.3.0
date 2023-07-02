@@ -24,6 +24,7 @@ export const TransactionsProvider = ({ children }) => {
 
   const handleChange = (e, name) => {
     setformData((prevState) => ({ ...prevState, [name]: e.target.value }));
+    
   };
 
   const getAllTransactions = async () => {

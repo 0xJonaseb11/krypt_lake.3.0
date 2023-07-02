@@ -53,5 +53,6 @@ export default [
     addressFrom: "",
     amount: "",
     addressTo: "",
-  },
+},
+
 ];
