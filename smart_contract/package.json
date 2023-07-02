@@ -98,6 +98,7 @@
     "ethereum-cryptography": "^1.2.0",
     "ethereumjs-abi": "^0.6.8",
     "ethereumjs-util": "^6.2.1",
+    "ethers": "^5.7.2",
     "ethjs-unit": "^0.1.6",
     "ethjs-util": "^0.1.6",
     "event-target-shim": "^5.0.1",
@@ -349,7 +350,6 @@
     "@nomiclabs/hardhat-waffle": "^2.0.6",
     "chai": "^4.3.7",
     "ethereum-waffle": "^4.0.10",
-    "ethers": "^5.7.2",
     "hardhat": "^2.16.0",
     "mocha": "^10.2.0"
   },

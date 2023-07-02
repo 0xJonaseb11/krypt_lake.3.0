@@ -104,6 +104,7 @@ export const TransactionsProvider = ({ children }) => {
 
   const sendTransaction = async () => {
     try {
+      if(!ethereum) return alert('Please install Metamask');
       if (ethereum) {
         const { addressTo, amount, keyword, message } = formData;
         const transactionsContract = createEthereumContract();

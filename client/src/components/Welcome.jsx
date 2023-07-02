@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import React, { useContext, useState } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
-import { Loader } from ".";
+import Loader from "./Loader";
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
@@ -21,17 +23,41 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-  const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
+  const { currentAccount, connectWallet, handleChange, sendTransaction } = useContext(TransactionContext);
+  const [formData, setFormData] = useState({
+    addressTo: "",
+    amount: "",
+    keyword: "",
+    message: ""
+  });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    
     const { addressTo, amount, keyword, message } = formData;
 
-    e.preventDefault();
+    if (!addressTo || !amount || !keyword || !message) return;
 
-    if (!addressTo || !amount || !keyword || !message) return sendTransaction();
+    setIsLoading(true);
 
-    
+    try {
+      await sendTransaction();
 
+      // Reset form fields
+      setFormData({
+        addressTo: "",
+        amount: "",
+        keyword: "",
+        message: ""
+      });
+    } catch (error) {
+      console.log("Error occurred during transaction:", error);
+      // Handle error as needed
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -102,17 +128,17 @@ const Welcome = () => {
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
-            {isLoading
-              ? <Loader />
-              : (
-                <button
-                  type="button"
-                  onClick={handleSubmit}
-                  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
-                >
-                  Send now
-                </button>
-              )}
+            {isLoading ? (
+              <Loader />
+            ) : (
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+              >
+                Send now
+              </button>
+            )}
           </div>
         </div>
       </div>
