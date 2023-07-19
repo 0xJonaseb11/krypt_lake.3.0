@@ -21,3 +21,10 @@ typechain-types
 cache
 artifacts
 
+#deploy content
+deploy
+
+#run content
+run
+
+

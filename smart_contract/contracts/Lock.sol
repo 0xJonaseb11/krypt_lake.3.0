@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity >=0.5.16 <0.9.0;
 
-// Uncomment this line to use console.log
+// Uncomment this line to use console.sol
 // import "hardhat/console.sol";
 
 contract Lock {
