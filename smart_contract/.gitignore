@@ -22,9 +22,9 @@ cache
 artifacts
 
 #deploy content
-deploy
+.deploy
 
 #run content
-run
+.run
 
 

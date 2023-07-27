@@ -24,8 +24,9 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-  const { currentAccount, connectWallet, handleChange, sendTransaction } =
-    useContext(TransactionContext);
+ 
+
+  const { currentAccount, connectWallet, /*formData,*/ handleChange, sendTransaction } = useContext(TransactionContext);
   const [formData, setFormData] = useState({
     addressTo: "",
     amount: "",
@@ -35,14 +36,13 @@ const Welcome = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
+    const { addressTo, amount, keyword, message } = formData;
     e.preventDefault();
     setIsLoading(true);
 
-    const { addressTo, amount, keyword, message } = formData;
-
     if (!addressTo || !amount || !keyword || !message) return;
-
-    setIsLoading(true);
+        sendTransaction();
+        setIsLoading(true);
 
     try {
       await sendTransaction();
@@ -105,7 +105,7 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
-          <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
+          <div className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">

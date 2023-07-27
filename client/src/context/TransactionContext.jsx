@@ -9,11 +9,12 @@ const createEthereumContract = () => {
   const provider = new ethers.providers.Web3Provider(ethereum);
   const signer = provider.getSigner();
   const transactionsContract = new ethers.Contract(contractAddress, contractABI, signer);
-
+  
   return transactionsContract;
 };
 
-export const TransactionsProvider = ({ children }) => {
+export const TransactionProvider = ({ children }) => {
+  
   const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
   const [currentAccount, setCurrentAccount] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -22,7 +23,6 @@ export const TransactionsProvider = ({ children }) => {
 
   const handleChange = (e, name) => {
     setformData((prevState) => ({ ...prevState, [name]: e.target.value }));
-    
   };
 
   const getAllTransactions = async () => {
@@ -52,7 +52,7 @@ export const TransactionsProvider = ({ children }) => {
     }
   };
 
-  const checkIfWalletIsConnect = async () => {
+  const checkIfWalletIsConnected = async () => {
     try {
       if (!ethereum) return alert("Please install MetaMask.");
 
@@ -67,6 +67,8 @@ export const TransactionsProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
+
+      throw new error('No ethereum Object');
     }
   };
 
@@ -89,7 +91,7 @@ export const TransactionsProvider = ({ children }) => {
     try {
       if (!ethereum) return alert("Please install MetaMask.");
 
-      const accounts = await ethereum.request({ method: "eth_requestAccounts", });
+      const accounts = await ethereum.request({ method: "eth_requestAccounts"});
 
       setCurrentAccount(accounts[0]);
       window.location.reload();
@@ -141,7 +143,7 @@ export const TransactionsProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    checkIfWalletIsConnect();
+    checkIfWalletIsConnected();
     checkIfTransactionsExists();
   }, [transactionCount]);
 
@@ -156,6 +158,7 @@ export const TransactionsProvider = ({ children }) => {
         sendTransaction,
         handleChange,
         formData,
+        setformData
       }}
     >
       {children}

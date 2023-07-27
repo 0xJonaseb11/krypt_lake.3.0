@@ -1,13 +1,16 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
-import { TransactionsProvider } from "./context/TransactionContext";
+import { TransactionProvider } from "./context/TransactionContext";
 import "./index.css";
 
 ReactDOM.render(
-  <TransactionsProvider>
+  <TransactionProvider>
+    <React.StrictMode>
     <App />
-  </TransactionsProvider>,
+    </React.StrictMode>
+  </TransactionProvider>,
   document.getElementById("root"),
 );
