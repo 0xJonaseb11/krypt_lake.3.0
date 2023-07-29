@@ -8,7 +8,8 @@ import { BsInfoCircle } from "react-icons/bs";
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import Loader from "./Loader";
-import { Transaction } from "ethers";
+
+
 
 const companyCommonStyles = `min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center
  items-center border-[0.5px] border-gray-400 text-sm font-light text-white`;
@@ -26,42 +27,25 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 
 const Welcome = () => {
  
-
-  const { currentAccount, connectWallet, /*formData,*/ handleChange, sendTransaction } = useContext(TransactionContext);
-  const [formData, setFormData] = useState({
-    addressTo: "",
-    amount: "",
-    keyword: "",
-    message: "",
-  });
-  const [isLoading, setIsLoading] = useState(false);
+ const { connectWallet, currentAccount, formData, sendTransaction, handleChange, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = async (e) => {
-    const { addressTo, amount, keyword, message } = formData;
+    const { addressTo, amount, keyword, message } = formData;    
+    
     e.preventDefault();
-    setIsLoading(true);
+  
     console.log('Submited');
 
     if (!addressTo || !amount || !keyword || !message) return;
         sendTransaction();
-        setIsLoading(true);
-
-    try {
-      await sendTransaction();
-
-      // Reset form fields
-      setFormData({
-        addressTo: "",
-        amount: "",
-        keyword: "",
-        message: "",
-      });
-    } catch (error) {
-      console.log("Error occurred during transaction:", error);
-      // Handle error as needed
-    } finally {
-      setIsLoading(false);
-    }
+        
+      //To be modified with time
+         try{  
+        if(currentAccount) return currentAccount.shortenAddress;
+         } catch(error) {
+          console.log(error);
+          throw new Error('No ethereum object');
+         }
   };
 
   return (
@@ -79,7 +63,7 @@ const Welcome = () => {
             <button
               type="button"
               onClick={connectWallet}
-              className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
+              className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 w-full rounded-full cursor-pointer hover:bg-[#2546bd]"
             >
               <AiFillPlayCircle className="text-white mr-2" />
               <p className="text-white text-base font-semibold">
@@ -153,14 +137,14 @@ const Welcome = () => {
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
-            {isLoading ? (
+            { isLoading ? (
               <Loader />
             ) : (
               <button
                 type="button"
-                onClick={handleSubmit}
+                onClick={handleSubmit}               
                 className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
-              >
+              > 
                 Send now
               </button>
             )}

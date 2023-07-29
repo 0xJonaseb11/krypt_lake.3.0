@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
 
 import logo from "../../images/logo.png";
 
@@ -18,15 +16,15 @@ const Footer = () => (
     </div>
 
     <div className="flex justify-center items-center flex-col mt-5">
-      <p className="text-white text-sm text-center">Come join us and hear for the unexpected miracle</p>
-      <p className="text-white text-sm text-center font-medium mt-2">info@sebejaz99@gmail.com</p>
+      <p className="text-white text-sm text-center">Come join us and hear for the unexpected miracles</p>
+      <p className="text-white text-sm text-center font-medium mt-2">info@krypt.com</p>
     </div>
 
-    <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
+    <div className="sm:w-[90%] w-full h-[2.5px] bg-gray-700 mt-5 " />
 
     <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
-      <p className="text-white text-left text-xs">@sebejaz99@gmail.com@2023</p>
-      <p className="text-white text-right text-xs">All rights reserved</p>
+      <p className="text-white text-left text-xs">@krypt.com@2023</p>
+      <p className="text-white text-right text-xs ">All rights reserved</p>
     </div>
   </div>
 );

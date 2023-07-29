@@ -5,7 +5,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { RiHeart2Fill } from "react-icons/ri";
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
-  <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
+  <div className="flex flex-row justify-start items-start w-full white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
     <div
       className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}
     >
@@ -44,13 +44,13 @@ const Services = () => (
           color="bg-[#8945F8]"
           title="Best exchange rates"
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="We offer you with best exchange rates that make your work and business profitable in a short period of time as much as possible."
+          subtitle="We offer you with best exchange rates that make your work and business profitable in a short period of time ."
         />
         <ServiceCard
           color="bg-[#F84550]"
           title="Fastest transactions"
-          icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="We offer you with fastest transactions that favor your work efficiency."
+          icon={<RiHeart2Fill fontSize={21} className="text-white " />}
+          subtitle="We offer you with fastest transactions that favor your business profitability."
         />
       </div>
     </div>

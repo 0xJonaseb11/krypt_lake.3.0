@@ -3,7 +3,7 @@ Author : Jonas Sebera
 ---
 
 <i>
-This project is created due to my passionate mind on Web3.0 development in consideration of the Frontend Development with react </i>
+This project is created due to my passionate mind on Web3.0 development in consideration to the Frontend Development with react </i>
 
 ---
 <b> 
@@ -21,3 +21,5 @@ npx init tailwindcss -p
 npm install react-icons ethers
 
 ```
+
+Incase need to use gifs to build an interactive application which is interactive to the users, Please visit   <i><b>`developers.giphy. com` </b></i>
