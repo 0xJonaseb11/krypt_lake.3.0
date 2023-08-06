@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
+import avatar  from '../../images/animated.svg';
+import sent from '../../images/hand-drawn-flat-design-family-scenes_52683-72513.avif';
+
 
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
@@ -40,24 +43,25 @@ const Welcome = () => {
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send Crypto <br /> across the world
-          </h1>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+          </h1> 
+          <img src={avatar} alt="avatar" />
+          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
             Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
           </p>
           {!currentAccount && (
             <button
               type="button"
               onClick={connectWallet}
-              className="flex flex-row justify-center w-full items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
+              className="flex flex-row justify-center w-full items-center my-20 bg-glassy p-3 rounded-full h-[80px] cursor-pointer hover:bg-[#2546bd] white-glassmorphism mt-10 mb-10"
             >
-              <AiFillPlayCircle className="text-white mr-2" />
-              <p className="text-white text-base font-semibold">
+              <AiFillPlayCircle className="text-white mr-5 text-5xl" />
+              <p className="text-white text-2xl font-semibold">
                 Connect Wallet
               </p>
             </button>
           )}
 
-          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
+          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-5 cursor-pointer">
             <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
               Reliability
             </div>
@@ -114,8 +118,13 @@ const Welcome = () => {
                 </button>
               )}
           </div>
+          <div className="flex m-5 mt-20 " >
+          <img  src={sent} alt="Celebration" />
+          </div>
         </div>
+
       </div>
+
     </div>
   );
 };
