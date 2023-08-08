@@ -1,10 +1,8 @@
 import { useContext } from "react";
+import { BiUserCheck } from "react-icons/bi";
 import { BiAddToQueue } from "react-icons/bi";
-import { IconContext } from "react-icons/lib";
-import { BiSolidUserAccount } from "react-icons/bi";
 import hello from '../../images/hello.svg';
 import { TransactionContext } from "../context/TransactionContext";
-
 import useFetch from "../hooks/useFetch";
 import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
@@ -58,9 +56,11 @@ const Transactions = () => {
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
           <>
-
-          <h3 className="text-white text-3xl text-center my-2">
-            < BiSolidUserAccount className=" flex-1 flex flex-col justify-start items-center md:ml-20 sm:mt-10 "/>Latest Transactions
+          <div className="-mt-10 w-full text-white">
+          < BiUserCheck className=" flex flex-col w-full justify-center items-center md:ml-20 sm:mt-10 " fontSize={150} color="teal"/>
+          </div>
+          <h3 className="text-white text-4xl text-center my-2 ml-20">
+            Latest Transactions
           </h3>
            <div className="flex flex-wrap justify-center items-center mt-10">
            {[...dummyData, ...transactions].reverse().map((transaction, i) => (
@@ -70,11 +70,10 @@ const Transactions = () => {
          </>
         ) : (
           
-
           <>
         
-          <h3 className="text-white text-3xl text-center my-2">
-          <BiAddToQueue className="text-white w-full " />
+          <h3 className="text-white text-4xl text-center my-2 ">
+          <BiAddToQueue className="text-white w-full " fontSize={100} color="teal"/>
            Connect your account to see the latest transactions
             </h3>
             <img className="mt-10 text-white w-full" src={hello} alt="Hello" /></>
