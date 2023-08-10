@@ -7,6 +7,7 @@ import useFetch from "../hooks/useFetch";
 import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
 
+
 // eslint-disable-next-line react/prop-types
 const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword, amount, url }) => {
   const gifUrl = useFetch({ keyword });
@@ -56,30 +57,31 @@ const Transactions = () => {
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
           <>
-          <div className="-mt-10 w-full text-white">
-          < BiUserCheck className=" flex flex-col w-full justify-center items-center md:ml-20 sm:mt-10 " fontSize={150} color="teal"/>
+          <div className="-mt-10 -ml-10 w-full text-white ">
+          <BiUserCheck className=" flex flex-col justify-center w-full items-center md:ml-20 sm:mt-10 white-glassmorphism" fontSize={150} color="teal"/>
           </div>
-          <h3 className="text-white text-4xl text-center my-2 ml-20">
+          <h3 className="text-white text-4xl text-center my-2 mt-10">
             Latest Transactions
           </h3>
            <div className="flex flex-wrap justify-center items-center mt-10">
            {[...dummyData, ...transactions].reverse().map((transaction, i) => (
-             <TransactionsCard key={i} {...transaction} />
+             <TransactionsCard key={i} {...transaction} /> 
            ))}
          </div>
          </>
         ) : (
           
           <>
-        
+       
           <h3 className="text-white text-4xl text-center my-2 ">
-          <BiAddToQueue className="text-white w-full " fontSize={100} color="teal"/>
+          <BiAddToQueue className="text-white w-full  " fontSize={100} color="teal"/>
            Connect your account to see the latest transactions
             </h3>
             <img className="mt-10 text-white w-full" src={hello} alt="Hello" /></>
         )}
 
       </div>
+     
     </div>
   );
 };

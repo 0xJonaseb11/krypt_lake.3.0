@@ -1,5 +1,6 @@
 
 import logo from "../../images/logo.png";
+import { BiUpArrowAlt } from "react-icons/bi";
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
@@ -15,8 +16,8 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="flex justify-center items-center flex-col mt-5 rounded-2xl white-glassmorphism p-4">
-      <p className="text-white text-2xl text-center font-semibold  " >Come join us and hear for the unexpected miracles</p>
+    <div className="flex justify-center items-center flex-col mt-5 rounded-2xl white-glassmorphism p-4 ">
+      <p className="text-white text-2xl text-center font-semibold md:text-base sm:text-base  " >Come join us and hear for the unexpected miracles</p>
       <p className="text-white text-sm text-center font-medium mt-2">info@krypt.com</p>
     </div>
 
@@ -26,6 +27,7 @@ const Footer = () => (
       <p className="text-white text-left text-xs">@krypt.com@2023</p>
       <p className="text-white text-right text-xs ">All rights reserved</p>
     </div>
+    < BiUpArrowAlt className="text-[teal] justify-end cursor-pointer" fontSize={100}/>
   </div>
 );
 
