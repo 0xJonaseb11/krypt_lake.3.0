@@ -20,7 +20,7 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
       sm:max-w-[300px]
       min-w-full flex-col p-3 rounded-md hover:shadow-2xl"
     >
-      <div className="flex flex-col items-center w-full mt-3">
+      <div className="flex flex-col items-center w-full mt-3 md:p-5">
         <div className="display-flex justify-start w-full mb-6 p-2">
           <a href={`https://sepolia.etherscan.io/address/${addressFrom}`} target="_blank" rel="noreferrer">
             <p className="text-white text-base">From: {shortenAddress(addressFrom)}</p>
@@ -53,17 +53,18 @@ const Transactions = () => {
   const { transactions, currentAccount } = useContext(TransactionContext);
 
   return (
-    <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
+    <div className="flex w-full justify-center items-center 2xl:px-20  gradient-bg-transactions">
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
           <>
-          <div className="-mt-10 -ml-10 w-full text-white ">
-          <BiUserCheck className=" flex flex-col justify-center w-full items-center md:ml-20 sm:mt-10 white-glassmorphism" fontSize={150} color="teal"/>
-          </div>
-          <h3 className="text-white text-4xl text-center my-2 mt-10">
+           <div className="-mt-8 justify-center items-center text-center text-white p-1 md:w-[300px] md:ml-32 sm:w-[80px] blue-glassmorphism hover:shadow-xl">
+           <h3 className="text-white text-4xl text-center my-2 mt-10">
+          <BiUserCheck className=" flex flex-col justify-center items-center text-center p-1 m-4 md:ml-20 sm:mt-10 blue-glassmorphism hover:shadow-xl" fontSize={80} color="teal"/>
             Latest Transactions
           </h3>
-           <div className="flex flex-wrap justify-center items-center mt-10">
+          </div> 
+         
+           <div className="flex flex-wrap justify-center items-center mt-10 hover:shadow-xl">
            {[...dummyData, ...transactions].reverse().map((transaction, i) => (
              <TransactionsCard key={i} {...transaction} /> 
            ))}
@@ -72,14 +73,16 @@ const Transactions = () => {
         ) : (
           
           <>
-       
-          <h3 className="text-white text-4xl text-center my-2 ">
-          <BiAddToQueue className="text-white w-full  " fontSize={100} color="teal"/>
-           Connect your account to see the latest transactions
+       <div className="flex flex-col md:w-full sm:w-[50%] hover:shadow-xl">
+          <h3 className=" flex flex-col text-[white] text-4xl text-center my-2 md:text-3xl sm:text-2xl blue-glassmorphism p-2 ">
+          <BiAddToQueue className=" flex flex-col text-white mb-2 md:-mb-10 ml-1 mt-2 blue-glassmorphism hover:shadow-xl p-1 " fontSize={80} color="teal"/>
+           <b><em>Connect your wallet </em></b> to see the latest transactions
             </h3>
+            </div>
             <img className="mt-10 text-white w-full" src={hello} alt="Hello" /></>
         )}
-
+      
+     
       </div>
      
     </div>

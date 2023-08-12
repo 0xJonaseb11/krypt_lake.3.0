@@ -39,15 +39,16 @@ body {
 }
 
 .gradient-bg-footer {
-  background-color: #0f0e13;
+  background-color:#0f0e13;
   background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
-    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgb(20, 16, 39) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(76, 82, 116) 0, transparent 50%), 
+    radial-gradient(at 100% 10%, rgb(60, 33, 39) 0, transparent 50%);
 }
 
 .blue-glassmorphism {
   background: rgb(39, 51, 89, 0.4);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -81,6 +82,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+em{
+  color: teal;
+  color: 
+}
+
 
 @tailwind base;
 @tailwind Components;

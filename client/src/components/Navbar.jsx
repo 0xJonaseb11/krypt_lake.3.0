@@ -12,13 +12,13 @@ const NavBarItem = ({ title, classProps }) => {
   );
 };
 
-const HomeIconSyles = `text-[teal] cursor-pointer w-full`;
+const HomeIconSyles = `text-[teal] cursor-pointer w-full //hover:border-[white-glassmorphism]`;
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+    <nav className="w-full flex md:justify-center justify-between items-center p-4 hover:shadow-xl">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
@@ -26,11 +26,11 @@ const Navbar = () => {
          {["Market", "Exchange", "Demos", "Wallets"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] hover:shadow-xl">
           Login
         </li>
-        <li className="justify-end items-right ml-20 white-glassmorphism py-1 px-4 border-none ">
-         < BiHomeHeart className={` ${HomeIconSyles}`} fontSize={50}/>
+        <li className="text-[teal] w-full justify-end items-right ml-20 white-glassmorphism py-1 px-4 rounded-[5px] border-0 hover:border-[2px] hover:bg-[transparent] hover:shadow-xl cursor-pointer">
+         < BiHomeHeart  fontSize={50}/>
         </li>
       </ul>
       <div className="flex relative">
@@ -45,12 +45,21 @@ const Navbar = () => {
             className="z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
             flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
           >
+              <li className="text-white rounded-full bg-[#2952e3] hover:bg-[#2546bd] cursor-pointer py-2 px-7 mx-4 mt-8 shadow-xl justify-end text-left items-left ">
+              Login
+            </li>
             <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
             {/* eslint-disable-next-line react/jsx-key*/}
-            {["Market", "Exchange", "Demos", "Wallets" , <BiHomeHeart className={` ${HomeIconSyles}`} fontSize={50}/> ].map(
+            {["Market", "Exchange", "Demos", "Wallets"  ].map(
               (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
             )}
+          
+          <li className="text-[teal] justify-end items-right white-glassmorphism py-1 px-4 mt-10 rounded-[5px] border-0 hover:border-[2px] hover:bg-[#000]  hover:shadow-xl cursor-pointer">
+         < BiHomeHeart  fontSize={50}/>
+        </li>
+            
           </ul>
+          
         )}
       </div>
     </nav>

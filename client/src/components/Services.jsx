@@ -34,7 +34,7 @@ const Services = () => (
         </p>
       </div>
 
-      <div className="flex-1 flex flex-col justify-start items-center md:ml-20 sm:mt-10">
+      <div className="flex-1 flex flex-col justify-start items-center md:ml-20 sm:mt-10 hover:shadow-xl">
         <ServiceCard
           color="bg-[#2952E3]"
           title="Security guaranteed"
