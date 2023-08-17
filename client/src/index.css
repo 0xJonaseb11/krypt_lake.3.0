@@ -42,8 +42,8 @@ body {
   background-color:#0f0e13;
   background-image: 
     radial-gradient(at 0% 0%, rgb(20, 16, 39) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgb(76, 82, 116) 0, transparent 50%), 
-    radial-gradient(at 100% 10%, rgb(60, 33, 39) 0, transparent 50%);
+    radial-gradient(at 50% 0%, rgb(26, 27, 31) 0, transparent 50%), 
+    radial-gradient(at 80% 10%, rgb(48, 28, 32) 0, transparent 50%);
 }
 
 .blue-glassmorphism {
@@ -85,7 +85,7 @@ body {
 
 em{
   color: teal;
-  color: 
+  
 }
 
 

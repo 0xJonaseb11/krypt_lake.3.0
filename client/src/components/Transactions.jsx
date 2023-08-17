@@ -64,7 +64,7 @@ const Transactions = () => {
           </h3>
           </div> 
          
-           <div className="flex flex-wrap justify-center items-center mt-10 hover:shadow-xl">
+           <div className="flex flex-wrap justify-center items-center mt-10 hover:shadow-xl pb-20">
            {[...dummyData, ...transactions].reverse().map((transaction, i) => (
              <TransactionsCard key={i} {...transaction} /> 
            ))}
@@ -73,13 +73,13 @@ const Transactions = () => {
         ) : (
           
           <>
-       <div className="flex flex-col md:w-full sm:w-[50%] hover:shadow-xl">
-          <h3 className=" flex flex-col text-[white] text-4xl text-center my-2 md:text-3xl sm:text-2xl blue-glassmorphism p-2 ">
+       <div className="flex flex-col w-full md:w-[70%] sm:w-[50%] hover:shadow-xl">
+          <h3 className=" flex flex-col text-[white] text-4xl text-center my-2 md:text-3xl sm:text-2xl blue-glassmorphism rounded-[20px] p-2 ">
           <BiAddToQueue className=" flex flex-col text-white mb-2 md:-mb-10 ml-1 mt-2 blue-glassmorphism hover:shadow-xl p-1 " fontSize={80} color="teal"/>
            <b><em>Connect your wallet </em></b> to see the latest transactions
             </h3>
             </div>
-            <img className="mt-10 text-white w-full" src={hello} alt="Hello" /></>
+            <img className="mt-10 text-white w-full cursor-pointer  pb-20" src={hello} alt="Hello" /></>
         )}
       
      

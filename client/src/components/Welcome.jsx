@@ -44,7 +44,7 @@ const Welcome = () => {
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send Crypto <br /> across the world
           </h1> 
-          <img src={avatar} alt="avatar" />
+          <img src={avatar} alt="avatar" className="cursor-pointer"/>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
             Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
           </p>
@@ -52,10 +52,10 @@ const Welcome = () => {
             <button
               type="button"
               onClick={connectWallet}
-              className="flex flex-row justify-center w-full items-center my-20 bg-glassy p-3 rounded-full h-[80px] cursor-pointer hover:bg-[#2546bd] white-glassmorphism mt-10 mb-10"
+              className="flex flex-row justify-center w-full items-center my-20 p-3 rounded-full h-[80px] cursor-pointer hover:bg-[#2546bd] white-glassmorphism mt-10 mb-10"
             >
-              <AiFillPlayCircle className="text-white mr-5 text-5xl" />
-              <p className="text-white text-2xl font-semibold">
+              <AiFillPlayCircle className="text-white mr-5 text-5xl " />
+              <p className="text-white text-2xl font-bold">
                 Connect Wallet
               </p>
             </button>
@@ -118,8 +118,8 @@ const Welcome = () => {
                 </button>
               )}
           </div>
-          <div className="flex m-5 mt-20 " >
-          <img  src={sent} alt="Celebration" />
+          <div className="flex m-0 mt-20 " >
+          <img  src={sent} alt="Celebration" className="flex flex-col rounded-[10px] cursor-pointer" />
           </div>
         </div>
 

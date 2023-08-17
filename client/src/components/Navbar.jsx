@@ -29,7 +29,7 @@ const Navbar = () => {
         <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] hover:shadow-xl">
           Login
         </li>
-        <li className="text-[teal] w-full justify-end items-right ml-20 white-glassmorphism py-1 px-4 rounded-[5px] border-0 hover:border-[2px] hover:bg-[transparent] hover:shadow-xl cursor-pointer">
+        <li className="text-[teal] w-full justify-end items-right ml-20 white-glassmorphism py-1 px-4 rounded-[5px] border-0 hover:border-[2px] hover:bg-[#1313] hover:shadow-xl cursor-pointer">
          < BiHomeHeart  fontSize={50}/>
         </li>
       </ul>
@@ -54,7 +54,7 @@ const Navbar = () => {
               (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
             )}
           
-          <li className="text-[teal] justify-end items-right white-glassmorphism py-1 px-4 mt-10 rounded-[5px] border-0 hover:border-[2px] hover:bg-[#000]  hover:shadow-xl cursor-pointer">
+          <li className="text-[teal] justify-end items-right white-glassmorphism py-1 px-4 mt-10 rounded-[5px] border-0 hover:border-[2px] hover:bg-[#1313]  hover:shadow-xl cursor-pointer">
          < BiHomeHeart  fontSize={50}/>
         </li>
             
