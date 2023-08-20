@@ -28,24 +28,28 @@ const Welcome = () => {
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
+    isLoading(true);
     const { addressTo, amount, keyword, message } = formData;
-
+    
     e.preventDefault();
+    isLoading(false)
+
 
     if (!addressTo || !amount || !keyword || !message) return;
 
     sendTransaction();
+    
   };
 
   return (
-    <div className="flex w-full justify-center items-center">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
+    <div className="flex w-full justify-center items-center p-3">
+      <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12  gradient-bg-welcome ">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send Crypto <br /> across the world
           </h1> 
           <img src={avatar} alt="avatar" className="cursor-pointer"/>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
+          <p className="text-left mt-5 text-white font-light md:2 w-11/12 text-2xl">
             Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
           </p>
           {!currentAccount && (
@@ -79,7 +83,7 @@ const Welcome = () => {
           </div>
         </div>
 
-        <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
+        <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10 px-2  md:p-4 sm:p-3 blue-glassmorphism ">
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
@@ -118,7 +122,7 @@ const Welcome = () => {
                 </button>
               )}
           </div>
-          <div className="flex m-0 mt-20 " >
+          <div className="flex m-0 mt-20 mb-6" >
           <img  src={sent} alt="Celebration" className="flex flex-col rounded-[10px] cursor-pointer" />
           </div>
         </div>

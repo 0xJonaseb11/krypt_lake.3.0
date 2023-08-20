@@ -12,7 +12,6 @@ const NavBarItem = ({ title, classProps }) => {
   );
 };
 
-const HomeIconSyles = `text-[teal] cursor-pointer w-full //hover:border-[white-glassmorphism]`;
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);

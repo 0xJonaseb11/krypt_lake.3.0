@@ -16,7 +16,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="flex justify-center items-center flex-col mt-5 rounded-xl white-glassmorphism p-4 bg-[teal] hover:bg-[transparent] hover:p-5">
+      <div className="flex justify-center items-center flex-col mt-5 rounded-xl white-glassmorphism p-4 bg-[#3d4f7c] hover:text-3xl hover:p-2">
         <p className="text-[white] text-center font-semibold  md:text-2xl sm:text-base  ">Come join us and hear for the unexpected miracles</p>
         <p className="text-white text-sm text-center font-medium mt-2">info@krypt.com</p>
       </div>

@@ -20,15 +20,15 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
 );
 
 const Services = () => (
-  <div className="flex w-full justify-center items-center gradient-bg-services md:-mt-10">
-    <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
-      <div className="flex-1 flex flex-col justify-start items-start md:ml-28 ">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient -mt-10">
+  <div className="flex w-full justify-center items-center gradient-bg-services md:-mt-10 p-3 ">
+    <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 ">
+      <div className="flex-1 flex flex-col justify-start items-start md:ml-28 p-3 ">
+        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient -mt-10 m-1">
           Services that we
           <br />
           continue to improve
         </h1>
-        <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
+        <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base m-2">
           The best choice for buying and selling your crypto assets, with the
           various super friendly services we offer
         </p>
