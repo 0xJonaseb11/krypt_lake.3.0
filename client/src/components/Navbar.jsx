@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4 hover:shadow-xl">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+        <img src={logo} alt="logo" className="w-64 cursor-pointer" />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
          {["Market", "Exchange", "Demos", "Wallets"].map((item, index) => (
@@ -52,6 +52,7 @@ const Navbar = () => {
             {["Market", "Exchange", "Demos", "Wallets"  ].map(
               (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
             )}
+           
           
           <li className="text-[teal] justify-end items-right white-glassmorphism py-1 px-4 mt-10 rounded-[5px] border-0 hover:border-[2px] hover:bg-[#1313]  hover:shadow-xl cursor-pointer">
          < BiHomeHeart  fontSize={50}/>

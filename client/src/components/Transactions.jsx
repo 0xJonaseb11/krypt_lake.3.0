@@ -18,7 +18,7 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
       2xl:max-w-[500px]
       sm:min-w-[270px]
       sm:max-w-[300px]
-      min-w-full flex-col p-3 rounded-md hover:shadow-2xl"
+      min-w-full flex-col p-3 rounded-md hover:shadow-xl"
     >
       <div className="flex flex-col items-center w-full mt-3 md:p-5 ">
         <div className="display-flex justify-start w-full mb-6 p-2">
@@ -53,23 +53,24 @@ const Transactions = () => {
   const { transactions, currentAccount } = useContext(TransactionContext);
   
   return (
-    <div className="flex justify-center items-center w-full 2xl:px-20  gradient-bg-transactions p-3">
-      <div className="flex flex-col md:p-12 mt-8">
+    <div className="flex justify-center items-center w-full 2xl:px-20  gradient-bg-transactions p-3 -mt-10 shadow-2xl">
+      <div className="flex flex-col md:p-12 -mt-6">
         {currentAccount ? (
           <>
-           <div className="-mt-8 justify-center items-center text-center text-white p-0  w-full blue-glassmorphism hover:shadow-xl">
-           <h3 className="text-[white] text-2xl text-center my-2 mt-10 p-1 font-bold md:text-4xl sm:text-2xl md:mb-4 ">
-          <BiUserCheck className=" flex flex-col justify-center items-center text-center p-1 m-2 md:ml-20 sm:mt-10 blue-glassmorphism hover:shadow-xl -mt-6" fontSize={80} color="teal"/>
+           <div className="flex flex-col justify-center items-center px-4 md:w-[70%] sm:w-100 ">
+           <h3 className="text-[white] text-2xl text-center my-2 mt-10 p-4 font-bold md:text-4xl sm:text-2xl md:mb-4 blue-glassmorphism shadow-2xl border-1">
+          <BiUserCheck className=" flex flex-col justify-center items-center text-center p-1 md:ml-20 sm:mt-10 blue-glassmorphism hover:shadow-xl -mt-2" fontSize={80} color="teal"/>
             Latest Transactions
           </h3>
           </div> 
          
-           <div className="flex flex-wrap justify-center items-center mt-10 hover:shadow-xl pb-20 ">
+           <div className="flex flex-wrap justify-center items-center mt-10 hover:shadow-xl pb-20">
            {[...dummyData, ...transactions].reverse().map((transaction, i) => (
              <TransactionsCard key={i} {...transaction} /> 
            ))}
          </div>
          </>
+         
         ) : (
           
           <>
