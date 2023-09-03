@@ -13,12 +13,12 @@ const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword,
   const gifUrl = useFetch({ keyword });
 
   return (
-    <div className="bg-[#181918] m-2 flex flex-1 
+    <div className="bg-[#181918] m-1 flex flex-1 
       2xl:min-w-[350px]
       2xl:max-w-[500px]
       sm:min-w-[270px]
       sm:max-w-[300px]
-      min-w-full flex-col p-3 rounded-md hover:shadow-xl"
+      min-w-full flex-col p-0 rounded-md hover:shadow-xl"
     >
       <div className="flex flex-col items-center w-full mt-3 md:p-5 ">
         <div className="display-flex justify-start w-full mb-6 p-2">

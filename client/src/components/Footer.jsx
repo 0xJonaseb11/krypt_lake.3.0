@@ -16,7 +16,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="flex justify-center items-center flex-col mt-5 rounded-xl white-glassmorphism p-4 bg-[#3d4f7c] hover:text-3xl hover:p-2">
+      <div className="flex justify-center items-center flex-col mt-5 rounded-xl white-glassmorphism p-4 bg-[#3d4f7c]">
         <p className="text-[white] text-center font-semibold  md:text-2xl sm:text-base  ">Come join us and hear for the unexpected miracles</p>
         <p className="text-white text-sm text-center font-medium mt-2">info@krypt.com</p>
       </div>
@@ -24,7 +24,7 @@ const Footer = () => (
       <div className="sm:w-[90%] w-full h-[0.5px] bg-gray-800 mt-10 shadow-xl" />
 
       <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
-        <p className="text-white text-left text-xs">@krypt.com@2023</p>
+        <p className="text-white text-left text-xs"> Krypt.com &#169; 2023</p>
         <p className="text-white text-right text-xs ">All rights reserved</p>
       </div>
       <BiUpArrowAlt className="text-[teal] justify-bottom cursor-pointer blue-glassmorphism  border-0 hover:shadow-2xl" fontSize={50} />
