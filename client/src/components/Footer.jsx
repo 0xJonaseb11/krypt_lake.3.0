@@ -27,7 +27,7 @@ const Footer = () => (
         <p className="text-white text-left text-xs"> Krypt.com &#169; 2023</p>
         <p className="text-white text-right text-xs ">All rights reserved</p>
       </div>
-      <BiUpArrowAlt className="text-[teal] justify-bottom cursor-pointer blue-glassmorphism  border-0 hover:shadow-2xl" fontSize={50} />
+      <BiUpArrowAlt className="text-[teal] justify-bottom cursor-pointer .border-0 white-glassmorphism rounded-full" fontSize={40} />
     </div>
 );
 

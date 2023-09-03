@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4 hover:shadow-xl">
-      <div className="md:flex-[0.5] flex-initial justify-center items-center">
+      <div className="md:flex-[0.5] flex-initial justify-center items-center mr-2">
         <img src={logo} alt="logo" className="w-64 cursor-pointer" />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
