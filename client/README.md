@@ -1,5 +1,4 @@
-Author : Jonas Sebera
----
+### Author : JONAS SEBERA
 ---
 
 <i>
@@ -22,4 +21,9 @@ npm install react-icons ethers
 
 ```
 
-Incase need to use gifs to build an interactive application which is interactive to the users, Please visit   <i><b>`developers.giphy. com` </b></i>
+### To install the dependencies used in the blockend section, head to smart_contract folder in its <i> `README.md` </i> file
+
+Incase need to use gifs to build an interactive site, Please visit <i><b>`developers.giphy. com` </b></i>
+
+<hr>
+#### Jonas Sebera
