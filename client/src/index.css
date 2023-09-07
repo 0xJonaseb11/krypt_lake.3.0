@@ -18,8 +18,8 @@ body {
 .gradient-bg-welcome {
   background-color:#0f0e13;
   background-image: 
-    radial-gradient(at 0% 0%, hsla(253,56%,8%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgb(52, 49, 92) 0, transparent 50%), 
+    radial-gradient(at 0% 0%, rgb(13, 7, 39) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(16, 8, 90) 0, transparent 50%), 
     radial-gradient(at 100% 0%, rgba(32,15, 25, 0.815) 0, transparent 50%);
 }
 
@@ -40,13 +40,13 @@ body {
 .gradient-bg-footer {
   background-color:#0f0e13;
   background-image: 
-    radial-gradient(at 0% 0%, rgb(20, 16, 39) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgb(26, 27, 31) 0, transparent 50%), 
-    radial-gradient(at 80% 10%, rgb(48, 28, 32) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgb(17, 14, 32) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(17, 14, 32) 0, transparent 50%), 
+    radial-gradient(at 80% 10%, rgb(17, 14, 32) 0, transparent 50%);
 }
 
 .blue-glassmorphism {
-  background: rgb(39, 51, 89, 0.4);
+  background: rgba(34, 64, 163, 0.4);
   border-radius: 10px;
   box-shadow: 0 4px 0px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
@@ -86,6 +86,26 @@ em{
   color: teal;
   
 }
+i{
+  color: red;
+}
+d{
+  font-family: monospace;
+  color: #0f033d;
+}
+
+strong{
+  font-family:monospace;
+}
+
+#coffee{
+  opacity: 80%;
+}
+
+code {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 
 
 @tailwind base;

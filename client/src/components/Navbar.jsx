@@ -17,15 +17,15 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4 hover:shadow-xl">
-      <div className="md:flex-[0.5] flex-initial justify-center items-center mr-2">
+    <nav className="w-full flex md:justify-center justify-between items-center p-4 ">
+      <div className="md:flex-[0.5] flex-initial justify-center items-center mr-2"> 
         <img src={logo} alt="logo" className="w-64 cursor-pointer" />
-      </div>
-      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+      </div> 
+       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial p-2 mx-2 hover:shadow-xl">
          {["Market", "Exchange", "Demos", "Wallets"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] hover:shadow-xl">
+        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
           Login
         </li>
         <li className="text-[teal] w-full justify-end items-right ml-20 white-glassmorphism py-1 px-4 rounded-[5px] border-0 hover:border-[2px] hover:bg-[#1313] hover:shadow-xl cursor-pointer">
@@ -59,7 +59,6 @@ const Navbar = () => {
         </li>
             
           </ul>
-          
         )}
       </div>
     </nav>
