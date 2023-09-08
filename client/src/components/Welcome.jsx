@@ -56,7 +56,7 @@ const Welcome = () => {
             <button
               type="button"
               onClick={connectWallet}
-              className="flex flex-row justify-center w-full items-center my-20 p-3 rounded-full h-[80px] cursor-pointer hover:bg-[#2546bd] white-glassmorphism mt-10 mb-10"
+              className="flex flex-row justify-center w-full items-center my-20 p-3 rounded-full h-[80px] cursor-pointer hover:bg-[#2546bd] bg-[#9999] .white-glassmorphism mt-10 mb-10" id="connect"
             >
               <BiWalletAlt className="text-white mr-5 text-5xl " />
               <p className="text-white text-2xl font-bold">
