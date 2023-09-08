@@ -18,9 +18,9 @@ body {
 .gradient-bg-welcome {
   background-color:#0f0e13;
   background-image: 
-    radial-gradient(at 0% 0%, rgb(13, 7, 39) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgb(16, 8, 90) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, rgba(32,15, 25, 0.815) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgb(10, 3, 31) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(16, 5, 117) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(34, 8, 8) 0, transparent 50%);
 }
 
 .gradient-bg-services {
@@ -83,19 +83,11 @@ body {
 }
 
 em{
-  color: teal;
-  
-}
-i{
-  color: red;
-}
-d{
-  font-family: monospace;
-  color: #0f033d;
+  color: teal;  
 }
 
-strong{
-  font-family:monospace;
+i{
+  color: red;
 }
 
 #coffee{
@@ -122,6 +114,11 @@ code {
 
 }
 
+#come {
+  font-family: sans-serif;
+  color: #0f033d;
+
+}
 
 
 
