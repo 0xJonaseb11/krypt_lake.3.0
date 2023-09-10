@@ -87,7 +87,7 @@ em{
 }
 
 i{
-  color: red;
+  color: rgb(156, 5, 5);
 }
 
 #coffee{
@@ -119,6 +119,10 @@ code {
   color: #0f033d;
 
 }
+
+/* #nav {
+  
+} */
 
 
 
