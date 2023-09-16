@@ -6,7 +6,7 @@ import { RiHeart2Fill } from "react-icons/ri";
 
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ color, title, icon, subtitle }) => (
-  <div className="flex flex-row justify-start items-start md:w-full white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl md:-ml-10">
+  <div className="flex flex-row justify-start items-start w-11/12 md:w-full white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl md:-ml-10">
     <div
       className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}
     >
