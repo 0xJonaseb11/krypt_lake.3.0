@@ -1,2 +1,9 @@
 #quote
 quote.txt
+
+#.env
+.env
+
+#Github actions
+.github/workflows/
+

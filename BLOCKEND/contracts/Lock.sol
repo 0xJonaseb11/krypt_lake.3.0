@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity >=0.5.0 <0.9.0;
+pragma solidity ^0.8.18;
 
-import 'hardhat/console.sol';
+import { console } from 'hardhat/console.sol';
 
 contract Lock {
     uint public unlockTime;
