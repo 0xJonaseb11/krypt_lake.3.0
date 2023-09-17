@@ -7,3 +7,6 @@ quote.txt
 #Github actions
 .github/workflows/
 
+#node_modules
+node_modules
+
