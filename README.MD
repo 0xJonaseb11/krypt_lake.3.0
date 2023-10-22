@@ -1,5 +1,5 @@
 
-### Author : JONAS SEBERA
+### Author : JONAS SEBERA @Jonas-sebera
 <hr>
 
 # About
@@ -60,4 +60,4 @@ npx hardhat run scripts/deploy.js --network <network_name>
 <hr>
 ---
 
-#### Jonas-sebera
+#### @Jonas-sebera
