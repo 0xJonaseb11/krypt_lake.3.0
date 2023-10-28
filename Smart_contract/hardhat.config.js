@@ -3,7 +3,7 @@
 require('@nomiclabs/hardhat-waffle');
 module.exports = {
   solidity: {
-    version: '0.8.18',
+    version: '0.8.19',
     defaultNetwork: 'sepolia',
     networks: {
       hardhat: {},
