@@ -8,7 +8,7 @@ module.exports = {
   networks: {
     hardhat: {},
     sepolia: {
-      url: 'https://eth-sepolia.g.alchemy.com/v2/Ki5RIbUpckyesiTV7r7zg43yfsvqzuD6',
+      url: 'https://eth-sepolia.g.alchemy.com/v2/xK2JBsKJTCXfuz3iKesCyniq-URMcRGQ',
       accounts: [process.env.PRIVATE_KEY], // No need to prepend '0x'
     },
   },
