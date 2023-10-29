@@ -30,8 +30,9 @@ const Welcome = () => {
   const handleSubmit = (e) => {
     isLoading(true);
     const { addressTo, amount, keyword, message } = formData;
-    
+   
     e.preventDefault();
+   
     isLoading(false)
 
 

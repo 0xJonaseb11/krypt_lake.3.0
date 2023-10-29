@@ -12,3 +12,6 @@ node_modules/
 
 #quote
 quote.txt
+
+#.vscode
+.vscode

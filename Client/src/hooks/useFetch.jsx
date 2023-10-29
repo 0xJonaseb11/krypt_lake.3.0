@@ -1,3 +1,7 @@
+// EMbed code 
+{/* <iframe src="https://giphy.com/embed/l1gYcLBSdL7PoDsizo" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Friends-friends-tv-episode-220-l1gYcLBSdL7PoDsizo">via GIPHY</a></p> */}
+
+
 import { useEffect, useState } from "react";
 
 const API_KEY = import.meta.env.VITE_GIPHY_API;

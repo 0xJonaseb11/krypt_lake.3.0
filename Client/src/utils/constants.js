@@ -1,5 +1,6 @@
 import abi from "./Transactions.json";
 
 //Address gotten after running npx hardhat scripts/deploy.js --network <network_name>
-export const contractAddress = "0xfCCF80344a668b72ac4Be23513F0E9E4a35C84fA"; 
 export const contractABI = abi.abi;
+export const contractAddress = "0xD3792A5E5B604C7CD44fEe52Ee606A56d5F29397"; 
+
