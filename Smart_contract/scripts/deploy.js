@@ -1,5 +1,5 @@
 const { error } = require("fp-ts/lib/Console");
-const { ethers } = require("hardhat");
+// const { ethers } = require("hardhat");
 const { __awaiter } = require("tslib");
 
 async function main() {
