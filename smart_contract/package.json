@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nomiclabs/hardhat-waffle": "^2.0.6",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0"
   }
 }
