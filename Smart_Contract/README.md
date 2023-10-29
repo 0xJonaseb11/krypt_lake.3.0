@@ -48,5 +48,24 @@ hardhat test
 npx hardhat run scripts/deploy.js --network <network_name>
 ```   
 
+### Running all tasks
+```bash
+$ npx hardhat
+```
+```bash
+  check                 Check whatever you need
+  clean                 Clears the cache and deletes all artifacts
+  compile               Compiles the entire project, building all artifacts
+  console               Opens a hardhat console
+  coverage              Generates a code coverage report for tests
+  flatten               Flattens and prints contracts and their dependencies
+  help                  Prints this message
+  node                  Starts a JSON-RPC server on top of Hardhat Network
+  run                   Runs a user-defined script after compiling the project
+  test                  Runs mocha tests
+  typechain             Generate Typechain typings for compiled contracts
+  verify                Verifies contract on Etherscan
+```
+
 ---
 #### Jonas-sebera
