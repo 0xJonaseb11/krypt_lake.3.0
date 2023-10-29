@@ -30,4 +30,3 @@ artifacts
 #Github actions
 .github/workflows/
 
-quote.txt
