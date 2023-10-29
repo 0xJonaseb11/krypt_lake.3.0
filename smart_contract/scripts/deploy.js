@@ -1,6 +1,4 @@
-const { error } = require("fp-ts/lib/Console");
-// const { ethers } = require("hardhat");
-const { __awaiter } = require("tslib");
+const { ethers } = require("hardhat");
 
 async function main() {
     const [deployer] = await ethers.getSigners();

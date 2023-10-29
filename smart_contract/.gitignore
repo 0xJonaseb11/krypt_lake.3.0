@@ -27,4 +27,5 @@ artifacts
 #run content
 .run
 
-
+#Github actions
+.github/workflows/
