@@ -5,7 +5,7 @@ quote.txt
 .env
 
 #Github actions
-.github/workflows/
+.github/
 
 #node_modules/
 node_modules/
