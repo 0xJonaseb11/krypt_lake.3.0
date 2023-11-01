@@ -1,5 +1,5 @@
 
-![KRYPT.png](KRYPT.png)
+![KRYPT HOMEPAGE SAMPLE](KRYPT.png)
 
 ### Author : JONAS SEBERA @Jonas-sebera
 <hr>
