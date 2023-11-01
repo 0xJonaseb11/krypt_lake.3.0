@@ -1,7 +1,7 @@
 
 ![KRYPT HOMEPAGE SAMPLE](KRYPT.png)
 
-### Author : JONAS SEBERA @Jonas-sebera
+### Author : @Jonas-sebera
 <hr>
 
 # About
@@ -60,6 +60,5 @@ hardhat test
 npx hardhat run scripts/deploy.js --network <network_name>
 ```   
 <hr>
----
 
 #### @Jonas-sebera
