@@ -11,7 +11,7 @@ module.exports = {
     hardhat: {},
     sepolia: {
       url: 'https://eth-sepolia.g.alchemy.com/v2/xK2JBsKJTCXfuz3iKesCyniq-URMcRGQ',
-      accounts: [process.env.PRIVATE_KEY], 
+      accounts: [`0x${process.env.PRIVATE_KEY}`], 
     },
   },
   settings: {
