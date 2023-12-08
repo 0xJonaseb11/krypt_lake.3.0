@@ -26,4 +26,4 @@ npm install react-icons ethers
 Incase need to use gifs to build an interactive site, Please visit <i><b>`developers.giphy. com` </b></i>
 
 <hr>
-#### Jonas Sebera
+ @Jonas Sebera
