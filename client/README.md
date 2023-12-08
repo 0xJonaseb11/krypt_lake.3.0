@@ -1,4 +1,4 @@
-### Author : JONAS SEBERA
+### Author : @Jonas-sebera
 ---
 
 <i>
