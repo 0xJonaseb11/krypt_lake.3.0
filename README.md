@@ -5,7 +5,7 @@
 <hr>
 
 # About
-Send ETH across the World with the most redundant application KRYPT
+Send ETH across the World with the most super friendly application, KRYPT
 
 ### INTRO
 <hr>
