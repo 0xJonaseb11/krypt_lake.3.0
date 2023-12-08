@@ -120,14 +120,9 @@ code {
 
 }
 
-/* #nav {
-  
-} */
-
-
 
 
 @tailwind base;
-@tailwind Components;
+@tailwind components;
 @tailwind utilities;
 
