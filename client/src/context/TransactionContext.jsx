@@ -54,6 +54,7 @@ export const TransactionProvider = ({ children }) => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const checkIfWalletIsConnected = async () => {
     try {
       if (!ethereum) return alert("Please install MetaMask.");
