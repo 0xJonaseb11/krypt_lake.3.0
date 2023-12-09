@@ -26,6 +26,15 @@ const Footer = () => (
         <p className="text-white text-sm text-center font-medium mt-2 cursor-pointer"><a href="https://accounts.google.com" target="_blank" rel="noreferrer">info@krypt.com</a></p>
       </div>
 
+      <div className="sm:w-[90%] w-full h-[0.5px] bg-gray-800 mt-10 shadow-xl" />
+
+      <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
+        <p className="text-[#9999] text-left text-xs" id="at">&#187;Krypt&#169;2023</p>
+        <p className="text-[#9999] text-center text-xs" id="rights">All rights reserved</p>
+        <p className="flex flex-col text-[#9999] text-left text-xs" id="email">&#187;@sebejaz99</p>
+      </div>
+      <BiUpArrowAlt className="text-[teal] justify-bottom cursor-pointer .border-0 white-glassmorphism rounded-full " fontSize={40} />
+    </div>
 );
 
 export default Footer;
