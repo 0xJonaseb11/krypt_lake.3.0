@@ -19,7 +19,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="flex justify-center items-center text-center flex-col mt-5 rounded-xl white-glassmorphism p-4 bg-[#9999] w-full" id="coffee">
+      <div className="flex justify-center items-center text-center flex-col mt-5 rounded-xl white-glassmorphism p-2 bg-[#9999] w-9/12" id="coffee">
         <p className="text-white text-center font-semibold  md:text-2xl sm:text-base"><strong className="flex flex-col justify-center items-center text-center text-2xl pt-2 sm:text-4xl" id="come">Come Join Us For Technically Improved Transactions </strong> <br />   <main className="text-base font-semibold ">We Also Take Coffee Please!!! But Real <b>ETH</b> <i>NOT FAUCETS PLEASE!!</i></main> <BiRightArrowAlt className="flex flex-col text-center text-[lightgreen] mb-4 mt-2 " fontSize={50}/> </p>
         <p className="text-white text-center font-semibold  md:text-2xl sm:text-base"><BiWalletAlt className="flex flex-col justify-center text-white text-center items-center w-full border-0 -mt-16 " fontSize={50} /> <strong className="flex flex-col justify-center items-center text-center text-base" id="come">My Wallet : </strong> </p>
         <p className="flex flex-col justify-center items-center text-base text-white text-center md:text-base sm:text-base white-glassmorphism p-4 rounded-full ">0 x F 4 B 1 0 F c 9 4 C 0 B C D a 5 9 4 a d 8 5 5 F B 7 0 5 c 4 4 5 2 1 6 0 1 8 6 7</p>
