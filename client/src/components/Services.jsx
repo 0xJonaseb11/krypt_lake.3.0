@@ -41,7 +41,13 @@ const Services = () => (
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
           subtitle="Security is guaranteed. We always maintain privacy and the quality of our products."
         />
-        ou with fastest transactions that favor your business profitability."
+        <ServiceCard
+          color="bg-[#8945F8]"
+          title="Best exchange rates"
+          icon={<BiSearchAlt fontSize={21} className="text-white" />}
+          subtitle="We offer you with best exchange rates that make your work and business profitable in a short period of time ."
+        />
+       e offer you with fastest transactions that favor your business profitability."
         />
       </div>
     </div>
