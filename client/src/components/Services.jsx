@@ -47,11 +47,7 @@ const Services = () => (
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
           subtitle="We offer you with best exchange rates that make your work and business profitable in a short period of time ."
         />
-        <ServiceCard
-          color="bg-[#F84550]"
-          title="Fastest transactions"
-          icon={<RiHeart2Fill fontSize={21} className="text-white " />}
-          subtitle="We offer you with fastest transactions that favor your business profitability."
+       e offer you with fastest transactions that favor your business profitability."
         />
       </div>
     </div>
