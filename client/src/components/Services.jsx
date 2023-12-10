@@ -36,8 +36,8 @@ const Services = () => (
 
       <div className="flex-1 flex flex-col justify-start items-center md:ml-20 sm:mt-10 hover:shadow-xl">
        
-       
-       
+        ou with fastest transactions that favor your business profitability."
+        />
       </div>
     </div>
   </div>
