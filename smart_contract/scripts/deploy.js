@@ -19,5 +19,5 @@ const runMain = async () => {
   }
 }
 
-runMain();
+runMain(); 
 
