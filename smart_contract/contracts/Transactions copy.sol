@@ -1,11 +1,10 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
-
+// spdx-License-Identifier: MIT
+pragma solidity ^0.8.19
 
 contract Transactions {
-    uint256 transactionCount;
+    uint transactionCount;
 
-    event Transfer(
+    event indexed Transfer (
         address from,
         address receiver,
         uint amount,
@@ -25,43 +24,22 @@ contract Transactions {
 
     TransferStruct[] transactions;
 
-    function addToBlockchain(
+    function addToBlockchain (
         address payable receiver,
         uint amount,
         string memory message,
         string memory keyword
     ) public {
         transactionCount += 1;
-        transactions.push(
+        transactions.push (
             TransferStruct(
                 msg.sender,
                 receiver,
                 amount,
-                message,
                 block.timestamp,
                 keyword
             )
         );
 
-        emit Transfer(
-            msg.sender,
-            receiver,
-            amount,
-            message,
-            block.timestamp,
-            keyword
-        );
-    }
-        //getters
-    function getAllTransactions()
-        public
-        view
-        returns (TransferStruct[] memory)
-    {
-        return transactions;
-    }
 
-    function getTransactionCount() public view returns (uint256) {
-        return transactionCount;
-    }
 }
