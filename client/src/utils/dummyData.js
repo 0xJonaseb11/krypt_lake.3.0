@@ -2,7 +2,7 @@
 export default [
   {
     id: 1,
-    url: "https://metro.co.uk/wp-content/uploads/2015/05/pokemon_crying.gif?quality=90&strip=all&zoom=1&resize=500%2C284",
+    // url: "https://metro.co.uk/wp-content/uploads/2015/05/pokemon_crying.gif?quality=90&strip=all&zoom=1&resize=500%2C284",
     message: "",
     timestamp: "06/21/2023, 4:40:12 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -11,7 +11,7 @@ export default [
   },
   {
     id: 2,
-    url: "https://media4.popsugar-assets.com/files/2013/11/07/832/n/1922398/eb7a69a76543358d_28.gif",
+    // url: "https://media4.popsugar-assets.com/files/2013/11/07/832/n/1922398/eb7a69a76543358d_28.gif",
     message: "",
     timestamp: "06/23/2023, 4:46:33 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -20,7 +20,7 @@ export default [
   },
   {
     id: 3,
-    url: "https://acegif.com/wp-content/uploads/gif-shaking-head-38.gif",
+    // url: "https://acegif.com/wp-content/uploads/gif-shaking-head-38.gif",
     message: "",
     timestamp: "06/23/2023, 4:55:37 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -29,7 +29,7 @@ export default [
   },
   {
     id: 4,
-    url: "https://i.pinimg.com/originals/68/a0/9e/68a09e774e98242871c2db0f99307420.gif",
+    // url: "https://i.pinimg.com/originals/68/a0/9e/68a09e774e98242871c2db0f99307420.gif",
     message: "",
     timestamp: "07/04/2023, 5:02:21 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -38,7 +38,7 @@ export default [
   },
   {
     id: 5,
-    url: "https://i.pinimg.com/originals/73/d3/a1/73d3a14d212314ab1f7268b71d639c15.gif",
+    // url: "https://i.pinimg.com/originals/73/d3/a1/73d3a14d212314ab1f7268b71d639c15.gif",
     message: "",
     timestamp: "07/12/2023, 5:12:04 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -47,7 +47,7 @@ export default [
   },
   {
     id: 6,
-    url: "https://www.omnisend.com/blog/wp-content/uploads/2016/09/funny-gifs-9.gif",
+    // url: "https://www.omnisend.com/blog/wp-content/uploads/2016/09/funny-gifs-9.gif",
     message: "",
     timestamp: "07/20/2023, 7:33:21 AM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -56,7 +56,7 @@ export default [
   },
   {
     id: 7,
-    url: "https://metro.co.uk/wp-content/uploads/2015/05/pokemon_crying.gif?quality=90&strip=all&zoom=1&resize=500%2C284",
+    // url: "https://metro.co.uk/wp-content/uploads/2015/05/pokemon_crying.gif?quality=90&strip=all&zoom=1&resize=500%2C284",
     message: "",
     timestamp: "06/21/2023, 4:40:12 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
