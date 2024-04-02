@@ -16,6 +16,8 @@ const runMain = async () => {
   } catch (error) {
     console.error("Error deploying contract:", error);
     process.exit(1);
+  } finally {
+    console.log("Application finished");
   }
 }
 
