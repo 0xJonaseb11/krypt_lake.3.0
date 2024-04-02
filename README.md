@@ -10,15 +10,11 @@ Author : @Jaz-3-0
 
 Send ETH across the World with the most super friendly application, KRYPT
 
--------------
-
 This shows the great increadibility of hardhat framework..
 The project specifies the transparency of the Smart contract developed in this project that allows easy sending of ETH to any one ..
 You just need to have a Metamask or any  other ethereum wallet installed in your browser..
 
 ### Getting started
-
------------
 
 _**Basic Sample Hardhat Project For Sending ETH**_
 
@@ -45,7 +41,7 @@ npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle ethereu
 
 ```
 
-**Updated dependency list**
+_**Updated dependency list**_
 
 ````sh
 npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox @nomicfoundation/hardhat-network-helpers @nomicfoundation/hardhat-chai-matchers @nomicfoundation/hardhat-ethers @nomicfoundation/hardhat-verify chai ethers hardhat-gas-reporter solidity-coverage @typechain/hardhat typechain @typechain/ethers-v6
