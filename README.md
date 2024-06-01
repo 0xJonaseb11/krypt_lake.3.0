@@ -1,11 +1,5 @@
 # krypt_lake.3.0
 
-![KRYPT HOMEPAGE SAMPLE](KRYPT.png)
-
-Author : @Jaz-3-0
-
---------------
-
 ## About
 
 Send ETH across the World with the most super friendly application, KRYPT
@@ -63,4 +57,4 @@ npx hardhat run scripts/deploy.js --network <network_name>
 
 --------------
 
-@Jaz-3-0
+@Jonaseb11
