@@ -57,4 +57,4 @@ npx hardhat run scripts/deploy.js --network <network_name>
 
 --------------
 
-@Jonaseb11
+@0xJonaseb11
