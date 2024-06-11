@@ -1,14 +1,14 @@
-### Author : @Jonas-sebera
----
+# krypt_lake.3.0
 
-<i>
+## About
+
 This project is created due to my passionate mind on Web3.0 development in consideration to the Frontend Development with react </i>
 
 ---
-<b> 
+
 To install the dependencies used for the entire Frontend part, please run : : </b>
 
-```
+```sh
 npm create vite@latest
 npm install
 npm run dev
@@ -21,9 +21,10 @@ npm install react-icons ethers
 
 ```
 
-### To install the dependencies used in the blockend section, head to smart_contract folder in its <i> `README.md` </i> file
+### To install the dependencies used in the blockend section, head to smart_contract folder in its `README.md` file
 
 Incase need to use gifs to build an interactive site, Please visit <i><b>`developers.giphy. com` </b></i>
 
-<hr>
- @Jonas Sebera
+-----------------
+
+@0xJonaseb11
